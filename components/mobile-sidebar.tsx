@@ -22,9 +22,11 @@ const MobileSidebar = () => {
   return (
     <Sheet>
       <SheetTrigger>
-        <Button variant={'ghost'} size={'icon'} className='md:hidden'>
-          <Menu />
-        </Button>
+        <div className='md:hidden'>
+          <Button variant={'ghost'} size={'icon'}>
+            <Menu />
+          </Button>
+        </div>
       </SheetTrigger>
       <SheetContent side={'left'} className='p-0'>
         <Sidebar />
